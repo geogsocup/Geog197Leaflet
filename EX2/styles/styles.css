@@ -1,0 +1,30 @@
+#lalagyanan{
+	height: 100%;
+	width: 100%;
+}
+
+#dib1{
+	position: relative;
+	float: left;
+	height: 500px;
+	width: 200px;
+}
+
+#dib2{
+	position: relative;
+	float: right;
+	height: 500px;
+	width: 200px;
+}
+
+.blue{
+	background-color: blue;
+}
+
+.red{
+	background-color: red;
+}
+
+.sentro{
+	text-align: center;
+}
