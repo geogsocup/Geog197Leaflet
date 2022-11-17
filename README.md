@@ -1,7 +1,7 @@
 
 
 # Geog197Leaflet
-
+Short introdution to the webstack, introdution to Leaflet, Leaflet modules, and utilizing GeoJSON.
 
 
 ## Usage
