@@ -1,3 +1,4 @@
+//initialize the map
 const map = L.map('map').setView([14.65303, 121.06978], 18);
 
 const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {

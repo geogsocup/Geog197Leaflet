@@ -4,7 +4,7 @@ function sampleLangPogi(){
 	console.log(x);
 }
 
-function quickMaths(){
+/**function quickMaths(){
 	var una;
 	var pangalawa;
 	var pinagsama;
@@ -14,7 +14,7 @@ function quickMaths(){
 	
 	pinagsama = una + pangalawa;
 	console.log(pinagsama);
-}
+}**/
 
 function solve() {
     var x = parseInt(document.getElementById("firstNo").value);
@@ -24,5 +24,5 @@ function solve() {
 }
 
 
-sampleLangPogi();
-quickMaths();
+//sampleLangPogi();
+//quickMaths();
