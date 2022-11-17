@@ -5,15 +5,18 @@ var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+L.geoJson(NCRdata).addTo(map);
+
+//color palette
 function getColor(d) {
-    return d > 1000 ? '#800026' :
-           d > 500  ? '#BD0026' :
-           d > 200  ? '#E31A1C' :
-           d > 100  ? '#FC4E2A' :
-           d > 50   ? '#FD8D3C' :
-           d > 20   ? '#FEB24C' :
-           d > 10   ? '#FED976' :
-                      '#FFEDA0';
+    return d > 40000 ? '#ff0000' :
+           d > 35000  ? '#ff2a2a' :
+           d > 30000  ? '#ff5555' :
+           d > 25000  ? '#ff8080' :
+           d > 20000   ? '#ffaaaa' :
+           d > 15000   ? '#ffd5d5' :
+           d > 13000   ? '#ffffff' :
+                      '#ffffff';
 }
 
 function style(feature) {
@@ -26,3 +29,5 @@ function style(feature) {
         fillOpacity: 0.7
     };
 }
+
+L.geoJson(NCRdata, {style: style}).addTo(map);
